@@ -1,0 +1,17 @@
+/*
+Theme Name: Librairie
+Theme URI: https://wordpresstheme.io
+Author: Eric DURIEUX
+Author URI: https://dysign.fr
+Description: Theme Librairie
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+.menu {
+    position: fixed;
+    top: 0px;
+}
+
+.admin-bar .menu {
+	top: 32px; /* on prend en compte le décalage */
+}
