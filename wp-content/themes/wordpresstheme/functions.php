@@ -9,22 +9,22 @@ function wordpresstheme_functions_assets()
     wp_enqueue_style(
         'wordpresstheme',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css',
-        array(''),
-        '5.0.2',        
+        array(),
+        '5.0.2'
     );
 
     
     wp_enqueue_script(
         'wordpresstheme',
-        'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM',
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',
         array(),
-        '5.0.2',
+        '5.0.2'
     );
 
     // Déclarer un CSS
     wp_enqueue_style(
-        'wordpresstheme',
-        get_template_directory_uri() . '/css/main.css',
+        'wordpresscss',
+        get_template_directory_uri() . '/style.css',
         array(),
         '1.0'
     );
@@ -40,7 +40,6 @@ add_theme_support('post-thumbnails');
 // Ajouter automatiquement le titre du site dans l'en-tête du site
 add_theme_support('Librairie');
 
-add_theme_support('post-thumbnails');
 
 
 
